@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mo-phong-den-pin</title>
+    <script src="mo-phong-den-pin.js"></script>
+</head>
+<body>
+<script>
+    let battery = new Battery();
+    battery.setEnergy(10);
+    battery.getDecreaseEnergy();
+    let flashLamp = new FlashLamp();
+    flashLamp.setBattery(battery);
+    document.write("Battery info: " + flashLamp.getBatteryInfo() + "<br/>");
+    flashLamp.getLight();
+    document.write("Turn on<br/>");
+    flashLamp.getTurnOn();
+    flashLamp.getLight();
+    document.write("Battery info:" + flashLamp.getBatteryInfo() + "<br/>");
+    document.write("Turn off<br/>");
+    flashLamp.getTurnOff();
+    flashLamp.getLight();
+</script>
+</body>
+</html>

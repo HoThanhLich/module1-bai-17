@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="adam-eva.js"></script>
+</head>
+<body>
+<script>
+    let adam = new Human("Adam", "nam", "60");
+    let eva = new Human("Eva", "nữ", "45");
+    let apple = new Apple();
+    apple.setWeight(10);
+    adam.setApple(apple);
+    eva.setApple(apple);
+    for (let i = 0; i < 5; i++) {
+        eva.getEated();
+        eva.getEat();
+        document.write('Cân nặng của Eva: ' + eva.getWeight1() + 'khối lượng táo: ' + eva.getCheckApple() + '<br>');
+        adam.getEated();
+        adam.getEat();
+        document.write('Cân nặng của Adam: ' + adam.getWeight1() + 'khối lượng táo: ' + adam.getCheckApple() + '<br>');
+    }
+</script>
+</body>
+</html>
